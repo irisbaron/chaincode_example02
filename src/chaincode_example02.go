@@ -128,8 +128,8 @@ func (t *SimpleChaincode) invoke(stub shim.ChaincodeStubInterface, args []string
 	if err != nil {
 		return shim.Error("Invalid transaction amount, expecting a integer value")
 	}
-	Aval = Aval - 2*X //IB change
-	Bval = Bval + 2*X //IB change
+	Aval = Aval - 2*X 
+	Bval = Bval + 2*X 
 	fmt.Printf("Aval = %d, Bval = %d\n", Aval, Bval)
 
 	// Write the state back to the ledger
