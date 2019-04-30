@@ -102,6 +102,7 @@ func (t *SimpleChaincode) invoke(stub shim.ChaincodeStubInterface, args []string
 
 	A = args[0]
 	B = args[1]
+	X = X * 2
 
 	// Get the state from the ledger
 	// TODO: will be nice to have a GetAllState call to ledger
